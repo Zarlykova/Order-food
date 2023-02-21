@@ -1,10 +1,10 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import thunk from "redux-thunk";
-import { basketReducer } from "./basket/basketReducer";
+import {  basketSlice } from "./basket/basketSlice";
 
 
 const rootReducer = combineReducers({
-    basket:basketReducer,
+    [basketSlice.name]:basketSlice.reducer,
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk))

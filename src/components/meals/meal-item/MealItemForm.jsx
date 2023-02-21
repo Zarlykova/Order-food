@@ -3,7 +3,7 @@ import { ReactComponent as PlusIcon } from "../../../assets/icons/plus-icon.svg"
 import styled from "styled-components";
 import { useContext, useState } from "react";
 import { BasketContext } from "../../../store/BasketContext";
-import { addToBasket } from "../../../store/basket/basketReducer";
+import { addToBasket } from "../../../store/basket/basketSlice";
 import { useDispatch } from "react-redux";
 
 const MealItemForm =({id , title , price})=>{
